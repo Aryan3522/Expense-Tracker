@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <div class="container">
+            <div class="text-center my-2 heading">
+                <h1>Expense Tracker</h1>
+                <i class="bi bi-pencil-square"></i>
+            </div>
+            <div class="my-2 p-5 shadow-lg">
+
+                <div class="total_card_box">
+                    <div class="ag-courses_item">
+                      <a href="#" class="ag-courses-item_link">
+                        <div class="ag-courses-item_bg"></div>
+                
+                        <div class="item_title">
+                            Total Expenses
+                        </div>
+                
+                        <div class="ag-courses-item_date-box">
+                            <p class="lead" id="total">0</p>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+                
+                <div class="d-flex justify-content-between align-self-center">
+                    <div class="card_box" style="flex: 1;">
+                        <div class="ag-courses_item">
+                          <a href="#" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+                    
+                            <div class="item_title">
+                                Income
+                            </div>
+                    
+                            <div class="ag-courses-item_date-box">
+                                <p class="lead" id="in">0</p>
+                            </div>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="card_box" style="flex: 1;">
+                        <div class="ag-courses_item">
+                          <a href="#" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+                    
+                            <div class="item_title">
+                                Expense
+                            </div>
+                            <div class="ag-courses-item_date-box">
+                                <p class="lead" id="out">0</p>
+                            </div>
+                          </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="data" id="in-data" style="height: 150px; flex: 1;">
+                        <ol>
+                        </ol>
+                    </div>
+                    <div class="data" id="out-data" style="height: 150px; flex: 1;">
+                        <ol>
+                        </ol>
+                    </div>
+                </div>
+                
+                <hr>
+                <div>
+                    <div class="form-group ps-5 pe-5">
+                        <label for="title"><b>Name of transaction </b></label>
+                        <input type="text" name="title" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Enter Name of transaction">
+                    </div>
+                    <div class="form-group ps-5 pe-5">
+                        <label for="amount"><b>Amount</b></label>
+                        <input type="number" name="amount" class="form-control" id="amount" placeholder="Enter Your Amount">
+                    </div>
+                </div>
+                <div class="ps-5 pe-5">
+                    <div class="form-group">
+                        <form id="transactionType">
+
+                            <label for="type"><b> Select Transaction Type: </b></label>
+                            <select class="form-control" name="transactionType" id="type">
+                                <option value="default" disabled selected>Choose Transaction Type</option>
+                                <option value="income">Credit</option>
+                                <option value="expense">Debit</option>
+                            </select>
+                    </div>
+                    </form>
+
+                    <br>
+                    <div id="dynamic-buttons">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/index.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
